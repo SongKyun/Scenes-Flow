@@ -7,7 +7,7 @@ public class MainManager : MonoBehaviour
 {
     // Start() 및 Update() 메서드 삭제 - 현재 필요하지 않음
 
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
 
     [System.Serializable]
     class SaveData

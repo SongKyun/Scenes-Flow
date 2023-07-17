@@ -29,6 +29,8 @@ public class MenuUIHandler : MonoBehaviour
         ColorPicker.onColorChanged += NewColorSelected;
 
         ColorPicker.SelectColor(MainManager.Instance.TeamColor); // 메뉴 화면이 실행될 때 MainManager(있는 경우)에 저장된 색상을 미리 선택합니다.
+
+        //MainManager.Instance = null;
     }
 
     public void StartNew()
